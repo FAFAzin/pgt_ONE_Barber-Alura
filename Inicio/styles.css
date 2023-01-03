@@ -7,35 +7,15 @@
 
 body {
     min-width: 400px;
-
     background-color: #000000;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'popins', sans-serif;
+    font-size: 15px
 
 }
+/* ========== HEADER ============== */
 
-header h1 {
-    color: white;
-    font-family: 'Poppins', sans-serif;
-    font-size: 15px;
-    font-weight: bold;
-    margin-top: 25px;
-}
 
-header {
-    background-color: #000000;
-    padding: 3px 0 0 0;
-}
-
-.box__size {
-    width: 940px;
-    position: relative;
-    margin: 0 auto;
-}
-
-h1 img {
-    width: 30px;
-}
-
+/* ================= NAV ============== */
 nav {
     position: absolute;
     top: 20px;
@@ -60,65 +40,33 @@ nav a:hover {
     font-size: 13.5px;
 }
 
-#logo-principal {
+.logo-principal {
     width: 60px;
     position: relative;
-    top: 5px;
+    top: 10px;
     left: -12px;
     margin: 3px 0;
 }
+/* ==================== BANNER =============== */
 
-#banner {
+.banner {
     width: 100%;
-    padding: 0;
-    margin: 0;
-
 }
 
-#logo {
+/* ===============CONTEÚDO ===================== */
 
-    min-width: 10rem;
-    max-width: 20rem;
-    width: 10rem;
-    margin: 20px;
-
-}
-
-p {
-    color: #ffffff;
-    font: 13px;
-    margin: 5px;
-    padding: 10px;
-    text-align: justify;
-}
-
-.info p {
-    display: inline-block;
-    width: 40%;
-    vertical-align: top;
-    margin-right: 10%;
-}
-
-.info h2 {
-    color: #ffffff;
+.titulo-principal {
     text-align: center;
-}
-
-#imginfo {
-    width: 40%;
-    margin: 20px;
-}
-
-
-
-footer {
-    text-align: center;
-    background-color: #000000;
+    font-size: 2em;
     color: #ffffff;
-    padding: 10px;
-    font-size: 10px;
+    margin: 0 0 1em ;
 }
 
-footer img {
-    width: 40px;
+.principal p {
+    margin: 0 0 1em;
+    color: #ffffff;
 }
+
+
+
+
