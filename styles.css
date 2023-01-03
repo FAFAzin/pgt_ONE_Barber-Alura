@@ -8,23 +8,30 @@
 body {
     min-width: 400px;
     background-color: #000000;
-    font-family: 'popins', sans-serif;
+    font-family: 'poppins', sans-serif;
     font-size: 15px
 
 }
 /* ========== HEADER ============== */
 
-
 /* ================= NAV ============== */
+a .logo-principal {
+    width: 60px;
+    margin: 15px 0 0 50px;
+}
 nav {
     position: absolute;
     top: 20px;
     right: 0;
 }
+nav ul {
+    margin: 15px 50px;
+}
 
 nav li {
     display: inline;
     margin: 0 0 0 15px;
+    transition: 2s;
 }
 
 nav a {
@@ -36,7 +43,7 @@ nav a {
 }
 
 nav a:hover {
-    color: grey;
+    color: rgb(192, 192, 192);
     font-size: 13.5px;
 }
 
@@ -56,15 +63,24 @@ nav a:hover {
 /* ===============CONTEÚDO ===================== */
 
 .titulo-principal {
-    text-align: center;
+    text-align: start;
     font-size: 2em;
     color: #ffffff;
-    margin: 0 0 1em ;
+    margin: 0 60px 1em ;
+    
 }
 
 .principal p {
+    width: 40%;
+    text-align: justify;
+    padding-left: 60px;
     margin: 0 0 1em;
     color: #ffffff;
+}
+.logo-sobre {
+    width: 200px;
+    float: right;
+    margin: 0 230px 0 0px;
 }
 
 
