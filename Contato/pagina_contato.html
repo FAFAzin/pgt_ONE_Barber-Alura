@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Contato - Barber Alura</title>
+</head>
+
+<body>
+    <header>
+        <div class="box__size">
+            <h1><img class="logo-principal" src="../imagens/Design sem nome.png" alt=""></h1>
+
+            <nav>
+                <ul>
+                    <li><a href="../Inicio/pagina_inicial.html">Home</a></li>
+                    <li><a href="../Produtos/pagina_produtos.html">Produtos</a></li>
+                    <li><a href="../Contato/pagina_contato.html">Contatos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <form>
+            <!-- INPUTS LOGIN -->
+
+            <input type="text" name="nome" id="nome" class="input__padrao" required placeholder="nome">
+            <input type="email" name="email" id="email" class="input__padrao" required
+                placeholder="seuemail@dominio.com">
+            <input type="tel" name="telefone" id="telefone" class="input__padrao" required
+                placeholder="(xx) xxxxx-xxxx">
+            <input type="password" name="senha" id="senha" class="input__padrao" required placeholder="senha">
+
+
+            <!-- INPUT MENSAGEM -->
+            <textarea name="textarea" id="textarea" cols="30" rows="10" class="input__padrao"
+                placeholder='sua mensagem aqui'></textarea>
+
+            <!-- IMPUT RECEBER NOTIFICAÇÕES  -->
+            <fieldset>
+                <legend>Como deseja receber nossas notificações ?</legend>
+                <label for=" radio-whatsapp"> <input name='contato' value="contato" type="radio" id="radio-whatsapp"
+                        checked>
+                    Whatsapp</label>
+                <label for="radio-email"> <input name='contato' value="email" type="radio" id="radio-email">
+                    E-mail</label>
+
+
+                <label for="radio-telefone"> <input name='contato' value='telefone' type="radio" id="radio-telefone">
+                    Telefone</label>
+            </fieldset>
+            <fieldset>
+                <legend>Marque um horário para atendimento</legend>
+                <select>
+                    <option>Manhã</option>
+                    <option>Tarde</option>
+                    <option>Noite</option>
+                </select>
+            </fieldset>
+
+            <label for="notificacao"><input type="checkbox" class="checkbox" class="label" checked> Deseja receber
+                notificações por
+                email?</label>
+
+            <input class='button' type="submit" value="Enviar">
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>Dia</th>
+                    <th>Horário</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Segunda</td>
+                    <td>8h ~ 16h</td>
+                </tr>
+                <tr>
+                    <td>Terça</td>
+                    <td>8h ~ 16h</td>
+                </tr>
+                <tr>
+                    <td>Quarta</td>
+                    <td>8h ~ 16h</td>
+                </tr>
+            </tbody>
+
+        </table>
+    </main>
+    <footer>
+        <img src="/projeto2/imagens/logo-branco.png" alt="Logo da barbearia alura">
+        <p>&copy; Copyrigth Alura - 2022 </p>
+    </footer>
+    <script>
+        function handleSubtmit() {
+            console.log('ola')
+        }
+    </script>
+
+</body>
+
+</html>
