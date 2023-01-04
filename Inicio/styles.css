@@ -3,21 +3,21 @@
 * {
     margin: 0;
     padding: 0;
+    
 }
 
 body {
     min-width: 400px;
     background-color: #000000;
     font-family: 'poppins', sans-serif;
-    font-size: 15px
-
+    font-size: 15px;
 }
 /* ========== HEADER ============== */
 
 /* ================= NAV ============== */
 a .logo-principal {
-    width: 60px;
-    margin: 15px 0 0 50px;
+    width: 80px;
+    margin: 15px;
 }
 nav {
     position: absolute;
@@ -63,24 +63,61 @@ nav a:hover {
 /* ===============CONTEÚDO ===================== */
 
 .titulo-principal {
-    text-align: start;
+    text-align: end;
     font-size: 2em;
     color: #ffffff;
-    margin: 0 60px 1em ;
+    margin: 3em 60px 1em ;
     
 }
 
 .principal p {
-    width: 40%;
+    width: 90%;
     text-align: justify;
-    padding-left: 60px;
-    margin: 0 0 1em;
+    margin: 0 5%;
     color: #ffffff;
 }
-.logo-sobre {
-    width: 200px;
-    float: right;
-    margin: 0 230px 0 0px;
+.video {
+    float: left;
+    margin: 0 6%;
+
+}
+
+.mapa {
+    padding: 5em 0 0 0;
+}
+.titulo-mapa {
+    text-align: center;
+    color: #ffffff;
+    font-size: 2em;
+    padding: 0.5em 0;
+}
+
+.mapa p {
+    text-align: center;
+    color: lightgray;
+    margin: 5px 0 3em 1em;
+    padding: 0 10px;
+}
+
+.mapa iframe {
+    align-items: center;
+}
+
+footer {
+    text-align: center;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 30px;
+    font-size: 10px;
+}
+
+footer p {
+    font-size: 10px;
+    padding: 20px 15px 0 0;
+}
+
+footer img {
+    width: 60px;
 }
 
 
