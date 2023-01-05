@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/8097664c40.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
     <title>Barber</title>
 </head>
@@ -12,19 +13,25 @@
 <body>
     <header>
         <div class="box__size">
-            <a href="index.html"><img class="logo-principal" src="/imagens/logoprincipal.png"
-                    alt=""></a>
-            <nav>
+            <h1>
+                <img class="logo-principal" src="/imagens/logoprincipal.png" alt="">
+            </h1>
+            <nav id="lista">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Home</a></li>
                     <li><a href="./Produtos/pagina_produtos.html">Produtos</a></li>
                     <li><a href="./Contato/pagina_contato.html">Contatos</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    <img class="banner" src="/imagens/Agora estamos na internet.png" alt="">
+    <img class="banner" src="/imagens/banner.png" alt="">
     <main>
+        <section class="texto-image">
+            <h1>Vem que o pai ta on!</h1>
+            <h3>Agora temos o nosso próprio site, cadastre-se e marque o seu atendimento.</h3>
+            <button class="button">Cadastrar <i class="fa-solid fa-arrow-right-long icon__button"></i></button>
+        </section>
         <section class="principal">
             <h2 class="titulo-principal">Sobre nós</h2>
             <div class="video">
@@ -33,7 +40,6 @@
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen></iframe>
             </div>
-
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore
                 magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -60,5 +66,6 @@
 
 
 </body>
+<script src="script.js"></script>
 
 </html>

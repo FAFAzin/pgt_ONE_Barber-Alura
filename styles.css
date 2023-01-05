@@ -1,29 +1,35 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,800;0,900;1,800&display=swap');
 * {
     margin: 0;
     padding: 0;
-    
+
 }
 
 body {
-    min-width: 400px;
-    background-color: #000000;
+    width: 100%;
+    background-color: #ffffff;
+    color: #000000;
     font-family: 'poppins', sans-serif;
     font-size: 15px;
 }
+
 /* ========== HEADER ============== */
+header {
+    background-color: #ffffff;
+}
 
 /* ================= NAV ============== */
-a .logo-principal {
-    width: 80px;
-    margin: 15px;
+h1 img {
+    width: 40px;
+    margin: 15px 30px;
 }
+
 nav {
     position: absolute;
-    top: 20px;
+    top: 10px;
     right: 0;
 }
+
 nav ul {
     margin: 15px 50px;
 }
@@ -36,67 +42,132 @@ nav li {
 
 nav a {
     text-transform: uppercase;
-    color: #ffffff;
     font-weight: bold;
     font-size: 13px;
     text-decoration: none;
+    color: #000000;
+}
+
+nav a.active {
+    border-bottom: 2px solid blue;
 }
 
 nav a:hover {
     color: rgb(192, 192, 192);
     font-size: 13.5px;
 }
+/* ============ texto-image ========== */
+.texto-image {
+    position: absolute;
+    top: 13rem;
+}
+.texto-image h1{
+    text-transform:uppercase;
+    width: 45%;
+    font-size: 5rem;
+    letter-spacing: 1px;
+    line-height: 0.9;
+    font-weight: bold;
+    margin: 0 1rem 0 5rem;
+    transition: 500ms;
+    cursor: grab;
+    
+}
+.texto-image h1:hover{
+    color: darkgray;
+}
+.texto-image h3 {
+    width: 48%;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 2rem 1rem 0 5rem;
+    color: grey;
+   
+}
 
-.logo-principal {
-    width: 60px;
-    position: relative;
-    top: 10px;
-    left: -12px;
-    margin: 3px 0;
+/* ============== button ========== */
+.button {
+    background-color: rgb(3, 170, 3);
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+    padding: 15px;
+    width: 10rem;
+    border-radius: 4px;
+    margin: 3em 5rem;
+    transition: 500ms;
+    cursor: pointer;
+    text-align: center;
+}
+
+.button:hover{
+    background-color: darkgreen;
+}
+
+.icon__button {
+    margin: 6px 0 0 7px;
+    font-size: 13px;
 }
 /* ==================== BANNER =============== */
 
 .banner {
     width: 100%;
+    opacity: 0.8;
+    transition: 500ms;
+}
+
+.banner:hover {
+    opacity: 0.3;
 }
 
 /* ===============CONTEÚDO ===================== */
 
 .titulo-principal {
     text-align: end;
-    font-size: 2em;
-    color: #ffffff;
-    margin: 3em 60px 1em ;
-    
+    font-size: 3em;
+    color: #000000;
+    margin: 3em 60px 1em;
+    font-weight: 600;
+
 }
 
 .principal p {
     width: 90%;
     text-align: justify;
     margin: 0 5%;
-    color: #ffffff;
+    color: #000000;
 }
+
 .video {
     float: left;
     margin: 0 6%;
+    opacity: 0.8;
 
+}
+
+.video:hover {
+    opacity: 1;
 }
 
 .mapa {
     padding: 5em 0 0 0;
 }
+
 .titulo-mapa {
     text-align: center;
-    color: #ffffff;
+    color: #000000;
     font-size: 2em;
     padding: 0.5em 0;
+    font-weight: 600;
 }
 
 .mapa p {
     text-align: center;
-    color: lightgray;
+    color: rgb(108, 108, 108);
     margin: 5px 0 3em 1em;
     padding: 0 10px;
+    font-weight: 500;
 }
 
 .mapa iframe {
@@ -105,8 +176,8 @@ nav a:hover {
 
 footer {
     text-align: center;
-    background-color: #000000;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #000000;
     padding: 30px;
     font-size: 10px;
 }
@@ -120,6 +191,173 @@ footer img {
     width: 60px;
 }
 
+/* ============= mobile ======== */
+@media screen and (max-width: 480px) {
 
-
-
+    h1 img {
+        text-align: center;
+        width: 80px;
+        margin: 25px 10rem;
+    }
+    
+    nav {
+        position: absolute;
+        top: 8rem;
+        right: 1px;
+    }
+    
+    nav ul {
+        margin: 15px 40px;
+    }
+    
+    nav li {
+        display: inline;
+        margin: 0 0 0 10px;
+        transition: 2s;
+    }
+    
+    nav a {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 20px;
+        text-decoration: none;
+        color: #000000;
+    }
+    
+    nav a.active {
+        border-bottom: 2px solid blue;
+    }
+    
+    nav a:hover {
+        color: rgb(192, 192, 192);
+        font-size: 13.5px;
+    }
+    /* ============ texto-image ========== */
+    .texto-image {
+        position: absolute;
+        top: 13rem;
+    }
+    .texto-image h1{
+        text-transform:uppercase;
+        width: 85%;
+        font-size: 3.8rem;
+        letter-spacing: 1px;
+        line-height: 0.9;
+        font-weight: bold;
+        margin: 0 1px 10% 10%;
+    }
+    .texto-image h3 {
+        width: 80%;
+        text-align: justify;
+        line-height: 1.2;
+        font-size: 20px;
+        font-weight: 400;
+        margin: -15px 4rem 0 3rem;
+        color: grey;
+    }
+    
+    /* ============== button ========== */
+    .button {
+        background-color: rgb(3, 170, 3);
+        color: #ffffff;
+        font-size: 20px;
+        font-weight: bold;
+        border: none;
+        padding: 15px;
+        width: 15rem;
+        border-radius: 4px;
+        margin: 4rem 5.5rem;
+        transition: 500ms;
+        cursor: pointer;
+        text-align: center;
+    }
+    
+    .button:hover{
+        background-color: darkgreen;
+    }
+    
+    .icon__button {
+        margin: 6px 0 0 7px;
+        font-size: 13px;
+    }
+    /* ==================== BANNER =============== */
+    
+    .banner {
+        margin-top: 3rem;
+        width: 100%;
+        opacity: 0.3;
+        transition: 500ms;
+    }
+    
+    .banner:hover {
+        opacity: 0.3;
+    }
+    
+    /* ===============CONTEÚDO ===================== */
+    
+    .titulo-principal {
+        text-align: end;
+        font-size: 2em;
+        color: #3c3c3c;
+        margin: 8em 2rem 5px 1em;
+        font-weight: 600;
+    
+    }
+    .principal p {
+        width: 85%;
+        text-align: justify;
+        margin: 1rem 0 2rem 2rem;
+        color: #000000;
+    }
+    
+    .video {
+        width: 85%;
+        float: left;
+        margin: 1rem 2rem;
+        opacity: 0.8;
+    
+    }
+    
+    .video:hover {
+        opacity: 1;
+    }
+    
+    .mapa {
+        padding: 5em 0 0 0;
+    }
+    
+    .titulo-mapa {
+        text-align: center;
+        color: #000000;
+        font-size: 2em;
+        padding: 0.5em 0;
+    }
+    
+    .mapa p {
+        text-align: center;
+        color: #000000;
+        margin: 5px 0 3em 1em;
+        padding: 0 10px;
+    }
+    
+    .mapa iframe {
+        align-items: center;
+    }
+    
+    footer {
+        text-align: center;
+        background-color: #ffffff;
+        color: #000000;
+        padding: 30px;
+        font-size: 10px;
+    }
+    
+    footer p {
+        font-size: 10px;
+        padding: 20px 15px 0 0;
+    }
+    
+    footer img {
+        width: 60px;
+    }
+}
